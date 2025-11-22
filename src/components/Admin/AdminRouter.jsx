@@ -1,23 +1,32 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import HomePage from "./HomePage";
 import Features from "./features/Features";
 import Price from "./price/Price";
 import Solutions from "./Solutions/Solutions";
 
-
-const Router = () => {
+const AdminRouter = () => {
   return (
-    <BrowserRouter basename="/lms-saas/">
+  
       <Routes>
+
+        {/* HOME */}
         <Route path="/" element={<HomePage />} />
+
+        {/* FEATURES PAGE */}
         <Route path="/features" element={<Features />} />
+
+        {/* OTHER PAGES */}
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/price" element={<Price />} />
+
+        {/* CATCH ALL ROUTE */}
+        <Route path="*" element={<HomePage />} />
+
       </Routes>
-    </BrowserRouter>
+    
   );
 };
 
-export default Router;
+export default AdminRouter;
