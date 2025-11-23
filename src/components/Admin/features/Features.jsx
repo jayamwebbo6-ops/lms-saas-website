@@ -1,3 +1,6 @@
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import dashboard from "../../../img/dashboard.png";
 import teachers from "../../../img/teachers.png";
 import question from "../../../img/qestion.png";
@@ -8,9 +11,26 @@ import Footer from "../Footer/Footer";
 
 import "./Features.css";
 
-
 const Features = () => {
   const images = [dashboard, teachers, question, subscription];
+
+  // ------------------ SCROLL FIX FOR HASH ROUTES ------------------
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const section = document.getElementById(id);
+
+      if (section) {
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: "smooth" });
+        }, 200);
+      }
+    }
+  }, [location]);
+
+  // ----------------------------------------------------------------
 
   return (
     <>
@@ -213,4 +233,5 @@ const Features = () => {
 };
 
 export default Features;
+
 
