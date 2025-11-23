@@ -1,0 +1,712 @@
+
+  
+  
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 5vw 32px 5vw;
+    background: #f5faff;
+    height: 55vh !important;
+    padding-bottom: 100px !important;
+}
+.hero-home {
+  max-width: 480px;
+  flex: 1;
+}
+
+.hero-headline {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 24px;
+    line-height: 1.05;
+    letter-spacing: -1px;   /* reduced line spacing */
+}
+
+.hero-subheadline {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.btn {
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 12px 32px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary {
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    margin: 10px;
+    cursor: pointer;
+    width: 169px;
+}
+
+.btn-primary:hover {
+  background: #005bb5;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #0076FF;
+  border: 2px solid #0076FF;
+  width: 170px;
+  height: 50px;
+  position: absolute;
+  top :495px;
+
+  left:300px;
+}
+
+.btn-secondary:hover {
+  background: #e6f0ff;
+}
+
+.trusted-section {
+    margin-top: 100px;
+    padding-top: -19px;
+    border-top: 1px solid#EBF7FF;
+    padding-bottom: 50px;
+}
+
+
+.trusted-text {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #222;
+    font-weight: bold;
+    padding-left: 250px;
+    padding-bottom:80px;
+    padding-top: 10px;
+    position: absolute;
+    top: 600px;
+}
+
+/* Logo Row */
+.logo-row {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 24px;
+  
+}
+
+
+#logo-4 {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #efefef;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 12px;
+  transition: 0.18s;
+
+  justify-content: center;
+  
+  left: 660px;
+
+
+}
+#logo-2 {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #efefef;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 12px;
+  transition: 0.18s;
+    position: absolute;
+  left: 890px;
+
+}
+#logo-3 {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #efefef;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 12px;
+  transition: 0.18s;
+    position: absolute;
+  left: 185px;
+
+}
+#logo-1 {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #efefef;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 12px;
+  transition: 0.18s;
+  position: absolute;
+  left: 400px;
+  
+
+}
+.institute-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #efefef;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding:20px ;
+  filter: grayscale(40%);
+  opacity: 0.88;
+  transition: 0.18s;
+  left: 200px;
+}
+
+.institute-logo:hover {
+  transform: scale(1.08);
+}
+
+.stats-row {
+  display: flex;
+  gap: 32px;
+}
+
+.stats-value {
+    display: block;
+    font-size: 4.6rem;
+    font-weight: 700;
+    color: #0076FF;
+    padding-left: 150px;
+}
+
+.stats-label {
+  display: block;
+  font-size: 1rem;
+  color: #222;
+  padding-left: 150px;
+}
+#stats-label-1{
+   display: block;
+  font-size: 1rem;
+  color: #222;
+  padding-left: 200px;
+ 
+
+}
+#stats-label-2{
+   display: block;
+  font-size: 1rem;
+  color: #222;
+  padding-left: 220px;
+ 
+
+}
+
+
+/* Hero Right Image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+#img-1 {
+    width: 730px;
+    max-width: 76%;
+    left: 584px;
+    top: 140px;
+    border-radius: 16px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.35);
+    position: absolute;
+}
+
+
+
+#img-2 {
+    width: 344px;
+    height: 210px;
+    max-width: 90%;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+    background: #e9f4ff;
+    position: absolute !important;
+    top: 25rem;
+    left: 38rem;
+    display: flex;
+}
+
+#img-3 {
+    width: 339px;
+    height: 205px;
+    max-width: 90%;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+    background: #e9f4ff;
+    position: absolute;
+    top: 26rem;
+    left: 61rem;
+}
+
+
+
+/* ---------------------- */
+/* SECTION 3 – MAIN TITLE */
+/* ---------------------- */
+
+.section-three {
+  text-align: center;
+  padding: 80px 10%;
+  background:  #f5faff;
+}
+
+.section-three h1 {
+  font-size: 2.9rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  width: 800px;
+  padding-left: 150px;
+}
+
+.section-three p {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* ---------------------------- */
+/* SECTION-SUBTEXT (BEAUTIFUL)  */
+/* ---------------------------- */
+
+.section-subtext {
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: darkgray;     /* keep only text color */
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  padding-bottom: 30px;
+}
+
+
+/* -------------------------------- */
+/* ALTERNATING SECTIONS (IMAGE + TEXT) */
+/* -------------------------------- */
+
+/* -------------------------------- */
+/* FIXED ALTERNATING SECTIONS */
+/* -------------------------------- */
+
+/* Wrapper */
+.alternating-wrapper {
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* Each row (text + image horizontal) */
+.alt-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: nowrap;       /* ❗Force horizontal layout */
+}
+
+/* Reverse */
+.alt-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Text block */
+.alt-text {
+  width: 50%;              /* ❗Half width */
+}
+
+.alt-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+  padding-bottom: 20px;
+}
+
+.alt-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  padding-bottom: 100px;
+}
+
+/* Image block */
+.alt-img {
+  width: 50%;               /* ❗Half width */
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+  background: #f2f7ff;
+  object-fit: cover;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .alt-section,
+  .alt-section.reverse {
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .alt-text,
+  .alt-img {
+    width: 100%;
+  }
+}
+
+/* ---------------------------- */
+/* SOLUTIONS SECTION (CARDS) */
+/* ---------------------------- */
+
+.solutions-section {
+  padding: 80px 10%;
+  background:white;
+  text-align: center;
+}
+
+.solutions-section h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+ position: absolute;
+ padding-bottom: 100px;
+ 
+ top: 3695px;
+ left: 370px;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+
+.solution-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid #eef3f8;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+  transition: 0.2s;
+  text-align: left;
+}
+
+.solution-card:hover {
+  transform: translateY(-4px);
+}
+
+.solution-card h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.solution-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* ---------------------------- */
+/* BLOG SECTION */
+/* ---------------------------- */
+
+/* ---------------------------- */
+/* BLOG SECTION */
+/* ---------------------------- */
+
+/* ---------------------------- */
+/* BLOG SECTION STYLING */
+/* ---------------------------- */
+
+.blog-section {
+    padding: 80px 10%;
+    background: #f5faff;
+    text-align: center;
+}
+
+.blog-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.blog-subtext {
+    font-size: 1.1rem;
+    color: darkgray;
+    margin-bottom: 50px;
+    width: 60%;
+    margin: 0 auto 50px auto
+}
+
+/* Grid layout for blog cards */
+.blog-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Individual blog card */
+.new-blog-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #eef3f8;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+
+.new-blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+/* Image container */
+.blog-thumb {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.blog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Blog content */
+.blog-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 15px 20px 5px 20px;
+}
+
+.blog-card-title {
+    font-size: 1.3rem;
+    color: #222;
+    font-weight: 700;
+    margin: 5px 20px 10px 20px;
+    line-height: 1.4;
+}
+
+.blog-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 20px 15px 20px;
+    flex-grow: 1; /* Pushes "Read more" to bottom */
+}
+
+.blog-read {
+    display: block;
+    color: #0076FF;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 20px 20px 20px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .blog-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 2.2rem;
+    }
+    .blog-subtext {
+        font-size: 1rem;
+    }
+    .blog-card-title {
+        font-size: 1.15rem;
+    }
+    .blog-text {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ===========================================================
+   FINAL CTA – CLEAN, PREMIUM, BEAUTIFUL
+   =========================================================== */
+
+/* ===========================================================
+   FINAL CTA – CLEAN, PREMIUM, BEAUTIFUL (SMALL BUTTONS)
+   =========================================================== */
+
+/* ===========================================================
+   FINAL CTA – CLEAN, SMALLER & BEAUTIFUL
+   =========================================================== */
+
+/* FINAL CTA – BEAUTIFUL + SMALL BUTTONS */
+.final-cta-1 {
+  padding: 60px 8%;
+  text-align: center;
+  background: #f5faff;
+  border-radius: 20px;
+  margin: 80px auto;
+  max-width: 1050px;
+  box-shadow: 0 12px 45px rgba(0, 118, 255, 0.12);
+}
+
+.final-cta-1 h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f2a63;
+  margin-bottom: 22px;
+}
+
+.final-cta-buttons-1 {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+/* Primary Button */
+.final-cta-buttons-1 .btn-primary {
+  padding: 10px 22px;       /* SMALLER width */
+  font-size: 0.95rem;
+  border-radius: 8px;
+  background: #0076FF;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0,118,255,0.22);
+  width : 200px;
+}
+
+.final-cta-buttons-1 .btn-primary:hover {
+  background: #005cd6;
+  transform: translateY(-2px);
+}
+
+/* Secondary Button */
+.final-cta-buttons-1 .btn-secondary {
+  padding: 10px 22px;        /* SMALLER width */
+  font-size: 0.95rem;
+  border-radius: 8px;
+  background: #fff;
+  color: #0076FF;
+  border: 2px solid #0076FF;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.final-cta-buttons-1 .btn-secondary:hover {
+  background: #eaf3ff;
+  transform: translateY(-2px);
+  border-color: #005cd6;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .final-cta-buttons-1 {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+ /* FIX: Small buttons only in final CTA */
+.final-cta-1 .btn {
+    padding: 8px 20px !important;
+    font-size: 0.9rem !important;
+    border-radius: 6px !important;
+}
+
+  .final-cta-buttons-1 .btn-secondary {
+    padding: 10px 22px;
+    font-size: 0.95rem;
+  }
+}
+
+
+/* -------------- */
+/* RESPONSIVE */
+/* -------------- */
+
+@media (max-width: 900px) {
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-home {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    width: 85%;
+    margin-top: 20px;
+  }
+
+  .alt-section,
+  .alt-section.reverse {
+    flex-direction: column;
+  }
+
+  .alt-img {
+    width: 100%;
+  }
+  #section-3{
+    background-color:  #f5faff;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100%
+  }
+ 
+
+  
+}
+ .solution-card svg {
+    color: #114ed7;
+    height: 50px;
+    width: 50px;
+  }

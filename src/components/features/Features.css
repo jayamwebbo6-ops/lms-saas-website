@@ -1,0 +1,51 @@
+.feature-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 40px;
+  gap: 40px;
+  align-items: center;
+}
+
+/* IMAGE SLIDER */
+.image-slider {
+  width: 45%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  
+  display: flex;           /* NEW */
+  align-items: center;     /* NEW → centers image vertically */
+}
+
+
+/* HORIZONTAL SLIDER */
+.slider-track {
+  display: flex;
+  flex-direction: row;
+  animation: slide 12s infinite linear;
+}
+
+/* FIX — FULL IMAGE NO WHITE SPACE */
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* ⬅ FULL image, no gaps */
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+/* SLIDE ANIMATION */
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+/* CONTENT */
+.content-box {
+  width: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
