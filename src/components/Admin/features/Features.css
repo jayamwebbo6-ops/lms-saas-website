@@ -1,0 +1,122 @@
+/* --------------------------------------------------
+   TOP HEADING SECTION (Light Grey Background)
+-------------------------------------------------- */
+.feature-header {
+  width: 100%;
+  text-align: center;
+  padding: 40px 20px;
+  background: #f5f7ff;      /* Light blue-grey */
+}
+
+.feature-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #0d0f26;           /* Dark text */
+}
+
+.feature-header p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #444;
+}
+
+
+
+/* --------------------------------------------------
+   CONTENT + IMAGE HORIZONTAL LAYOUT
+-------------------------------------------------- */
+.feature-container {
+  display: flex;
+  flex-direction: row;       /* Text Left + Image Right */
+  width: 100%;
+  padding: 40px;
+  gap: 40px;
+  align-items: center;
+}
+
+
+
+/* --------------------------------------------------
+   IMAGE SLIDER
+-------------------------------------------------- */
+.image-slider {
+  width: 45%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Slider Track */
+.slider-track {
+  display: flex;
+  animation: slide 12s infinite linear;
+}
+
+/* Slider Images */
+.slide-img {
+  width: 95%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Slide Animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+/* --------------------------------------------------
+   CONTENT LEFT SECTION
+-------------------------------------------------- */
+.content-box {
+  width: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.content-box h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #0d0f26;        /* Dark blue–black */
+  font-weight: 600;
+  padding-left: 200px;
+}
+
+.content-box p {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+  padding-left: 100px;
+}
+
+
+
+/* --------------------------------------------------
+   RESPONSIVE (MOBILE)
+-------------------------------------------------- */
+@media (max-width: 900px) {
+
+  .feature-container {
+    flex-direction: column;    /* Stack Content + Image */
+    padding: 20px;
+  }
+
+  .image-slider, 
+  .content-box {
+    width: 100%;
+  }
+
+  .image-slider {
+    height: 300px;
+  }
+}
+
+
+

@@ -1,11 +1,14 @@
 import React from "react";
 import "./Solutions.css";
 
-import Screenshot1 from "../../img/Screenshot 1.png";
-import Screenshot2 from "../../img/Screenshot 2.png";
-import Screenshot3 from "../../img/Screenshot 3.png";
+import Screenshot1 from "../../../img/Screenshot 1.png";
+import Screenshot2 from "../../../img/Screenshot 2.png";
+import Screenshot3 from "../../../img/Screenshot 3.png";
+
+
 import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/footer";
+import Footer from "../Footer/Footer";
+
 
 const Solutions = () => {
   const cards = [

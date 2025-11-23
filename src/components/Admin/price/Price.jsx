@@ -1,7 +1,7 @@
 import React from "react";
 import "./Price.css";
 import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/footer";
+import Footer from "../Footer/Footer";
 
 
 const Price = () => {

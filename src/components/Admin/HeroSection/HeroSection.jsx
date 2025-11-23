@@ -1,12 +1,13 @@
 import React from "react";
 import "./HeroSection.css";
 
-import Screenshot1 from "../../img/Screenshot 1.png";
-import Screenshot2 from "../../img/Screenshot 2.png";
-import Screenshot3 from "../../img/Screenshot 3.png";
+import Screenshot1 from "../../../img/Screenshot 1.png";
+import Screenshot2 from "../../../img/Screenshot 2.png";
+import Screenshot3 from "../../../img/Screenshot 3.png";
 
-import Footer from "../Footer/footer";
+import Footer from "../Footer/Footer";
 import BlogSection from "./BlogSection";
+
 
 import {
     FaChalkboardTeacher,

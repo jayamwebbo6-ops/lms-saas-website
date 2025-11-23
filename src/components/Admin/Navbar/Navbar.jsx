@@ -8,9 +8,15 @@ function Navbar() {
   const [showFeatures, setShowFeatures] = useState(false);
   const navigate = useNavigate();
 
-  // Go to features page
+  // OLD — still kept
   const goToFeatures = () => {
     navigate("/features");
+    setShowFeatures(false);
+  };
+
+  // NEW — scroll to specific section
+  const goToFeatureSection = (section) => {
+    navigate(`/features#${section}`);
     setShowFeatures(false);
   };
 
@@ -24,6 +30,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
+
       <div className="navbar-logo">
         <Link to="/"><b id="logo-text">LMS-SAAS</b></Link>
       </div>
@@ -41,51 +48,51 @@ function Navbar() {
               {/* ROW 1 */}
               <div className="feature-box">
                 <h4>Institute</h4>
-                <p onClick={goToFeatures}>website – branded mini-site.</p>
-                <p onClick={goToFeatures}>dashboard for teachers & classes.</p>
-                <p onClick={goToFeatures}>teacher management tools.</p>
-                <p onClick={goToFeatures}>subscription tracking.</p>
-                <p onClick={goToFeatures}>customization settings.</p>
+                <p onClick={() => goToFeatureSection("institute")}>website – branded mini-site.</p>
+                <p onClick={() => goToFeatureSection("institute")}>dashboard for teachers & classes.</p>
+                <p onClick={() => goToFeatureSection("institute")}>teacher management tools.</p>
+                <p onClick={() => goToFeatureSection("institute")}>subscription tracking.</p>
+                <p onClick={() => goToFeatureSection("institute")}>customization settings.</p>
               </div>
 
               <div className="feature-box">
                 <h4>Classes</h4>
-                <p onClick={goToFeatures}>create class groups.</p>
-                <p onClick={goToFeatures}>auto student grouping.</p>
-                <p onClick={goToFeatures}>assign tests per class.</p>
-                <p onClick={goToFeatures}>participation tracking.</p>
+                <p onClick={() => goToFeatureSection("classes")}>create class groups.</p>
+                <p onClick={() => goToFeatureSection("classes")}>auto student grouping.</p>
+                <p onClick={() => goToFeatureSection("classes")}>assign tests per class.</p>
+                <p onClick={() => goToFeatureSection("classes")}>participation tracking.</p>
               </div>
 
               <div className="feature-box">
                 <h4>Students</h4>
-                <p onClick={goToFeatures}>bulk upload.</p>
-                <p onClick={goToFeatures}>email-based test access.</p>
-                <p onClick={goToFeatures}>student profiles.</p>
-                <p onClick={goToFeatures}>attendance tracking.</p>
+                <p onClick={() => goToFeatureSection("students")}>bulk upload.</p>
+                <p onClick={() => goToFeatureSection("students")}>email-based test access.</p>
+                <p onClick={() => goToFeatureSection("students")}>student profiles.</p>
+                <p onClick={() => goToFeatureSection("students")}>attendance tracking.</p>
               </div>
 
               {/* ROW 2 */}
               <div className="feature-box">
                 <h4>Question Bank</h4>
-                <p onClick={goToFeatures}>mcq / msq / descriptive.</p>
-                <p onClick={goToFeatures}>latex math editor.</p>
-                <p onClick={goToFeatures}>question tags & categories.</p>
-                <p onClick={goToFeatures}>reusable questions.</p>
+                <p onClick={() => goToFeatureSection("questions")}>mcq / msq / descriptive.</p>
+                <p onClick={() => goToFeatureSection("questions")}>latex math editor.</p>
+                <p onClick={() => goToFeatureSection("questions")}>question tags & categories.</p>
+                <p onClick={() => goToFeatureSection("questions")}>reusable questions.</p>
               </div>
 
               <div className="feature-box">
                 <h4>Tests</h4>
-                <p onClick={goToFeatures}>scheduled tests.</p>
-                <p onClick={goToFeatures}>unscheduled tests.</p>
-                <p onClick={goToFeatures}>simple builder.</p>
-                <p onClick={goToFeatures}>email distribution.</p>
+                <p onClick={() => goToFeatureSection("tests")}>scheduled tests.</p>
+                <p onClick={() => goToFeatureSection("tests")}>unscheduled tests.</p>
+                <p onClick={() => goToFeatureSection("tests")}>simple builder.</p>
+                <p onClick={() => goToFeatureSection("tests")}>email distribution.</p>
               </div>
 
               <div className="feature-box">
                 <h4>Results</h4>
-                <p onClick={goToFeatures}>instant scores.</p>
-                <p onClick={goToFeatures}>class-wise reports.</p>
-                <p onClick={goToFeatures}>export results.</p>
+                <p onClick={() => goToFeatureSection("results")}>instant scores.</p>
+                <p onClick={() => goToFeatureSection("results")}>class-wise reports.</p>
+                <p onClick={() => goToFeatureSection("results")}>export results.</p>
               </div>
 
             </div>
@@ -117,4 +124,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

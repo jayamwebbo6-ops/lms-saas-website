@@ -1,6 +1,6 @@
 .footer {
-  background: #0d0f26;
-  color: white;
+  background: #f3f3f3;       /* ⭐ Light Grey Footer */
+  color: #000;               /* Black Text */
   padding: 60px 8%;
   margin-top: 80px;
 }
@@ -12,28 +12,31 @@
   gap: 40px;
 }
 
+/* LOGO (LMS-SAAS in Blue) */
+.footer-logo {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #0d6efd;           /* ⭐ Blue LMS-SAAS */
+}
+
 .footer-col {
   flex: 1;
   min-width: 220px;
 }
 
-.footer-logo {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #4fd1c5;
-}
-
 .footer-col h3 {
   font-size: 20px;
   margin-bottom: 18px;
+  color: #0d0f26;           /* Dark heading */
 }
 
 .footer-col p {
-  opacity: 0.7;
+  opacity: 0.8;
   font-size: 14px;
   line-height: 1.5;
   max-width: 260px;
+  color: #333;
 }
 
 .footer-col ul {
@@ -45,12 +48,14 @@
   margin: 8px 0;
   cursor: pointer;
   opacity: 0.8;
+  font-size: 15px;
   transition: 0.2s ease-in-out;
+  color: #444;
 }
 
 .footer-col ul li:hover {
   opacity: 1;
-  color: #4fd1c5;
+  color: #0d6efd;           /* ⭐ Blue Hover */
 }
 
 /* Social Icons */
@@ -61,17 +66,18 @@
 }
 
 .footer-social svg {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.08);
   padding: 8px;
   font-size: 18px;
   border-radius: 50%;
   cursor: pointer;
+  color: #222;
   transition: 0.2s;
 }
 
 .footer-social svg:hover {
-  background: #4fd1c5;
-  color: #000;
+  background: #0d6efd;       /* Blue Hover */
+  color: #fff;
 }
 
 /* Footer Bottom */
@@ -79,9 +85,10 @@
   text-align: center;
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  opacity: 0.7;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  opacity: 0.8;
   font-size: 14px;
+  color: #333;
 }
 
 /* Responsive */
@@ -90,3 +97,4 @@
     flex-direction: column;
   }
 }
+
