@@ -8,6 +8,7 @@ import TeacherDashboard from './Teacher/TeacherDashboard';
 import TeacherMain from './Teacher/TeacherMain';
 import './institute.css'
 import TeacherClass from './Teacher/TeacherClass';
+import TeacherTest from './Teacher/TeacherTest';
 
 
 const InstituteRouter = () => {
@@ -28,6 +29,8 @@ const InstituteRouter = () => {
           <Route path="dashboard" element={<TeacherMain />} />
           {/* My Classes route */}
           <Route path="classes" element={<TeacherClass />} />
+
+          <Route path="tests" element={<TeacherTest />} />
          
         </Route>
       </Routes>
