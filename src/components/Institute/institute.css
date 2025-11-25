@@ -1,57 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Eagle+Lake&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Monda:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Root Variables */
-:root, [data-bs-theme="light"] {
-    --maincolor: #0068D9;
-    --backupcolor: #0496FF;
-    --graycolor: #edf1fb;
-    --navcolor: #00305c;
-    --darkcolor: #13293D;
-    --lightcolor: #f1f4f9;
-    --headingcolor: #003384;
-    --bodycolor: #334155;
-    --mutedcolor: #768ea7;
-    --greencolor: #4caf84;
-    --redcolor: #e44614;
-    --featuredtag: #e23c1f;
-    --new: #e23c1f;
-    --primaryfont: "Outfit", sans-serif;
-    --formborder: #dee2e6;
-    --formbg: #edf1fb;
-    --form-color: #3b515a;
-    --inversecolor: #00305c;
-    --footerbg: #13293D;
-    --footercolor: #536775;
+:root {
+  --maincolor: #0068D9;
+  --backupcolor: #0496FF;
+  --graycolor: #edf1fb;
+  --navcolor: #00305c;
+  --darkcolor: #13293D;
+  --lightcolor: #f1f4f9;
+  --headingcolor: #003384;
+  --bodycolor: #334155;
+  --mutedcolor: #768ea7;
+  --greencolor: #4caf84;
+  --redcolor: #e44614;
+  --featuredtag: #e23c1f;
+  --new: #e23c1f;
+  --primaryfont: "Outfit", sans-serif;
+  --formborder: #dee2e6;
+  --formbg: #edf1fb;
+  --form-color: #3b515a;
+  --inversecolor: #00305c;
+  --footerbg: #13293D;
+  --footercolor: #536775;
 }
 
-/* Institute Header Styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .institute-header {
-  position: fixed;
+  background: var(--navcolor);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--graycolor);
   z-index: 1000;
-  transition: all 0.3s ease;
-  font-family: var(--primaryfont);
 }
 
 .institute-header-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 85px;
 }
 
-/* Institute Logo Styles */
-.institute-logo a {
-  text-decoration: none;
-  color: inherit;
-}
-
+/* Logo Styles */
 .institute-logo-wrapper {
   display: flex;
   align-items: center;
@@ -61,21 +57,17 @@
 .institute-logo-image {
   height: 40px;
   width: auto;
-  object-fit: contain;
 }
 
 .institute-logo-text {
+  font-family: var(--primaryfont);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--navcolor);
-  background: linear-gradient(135deg, var(--maincolor), var(--darkcolor));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -0.5px;
+  color: white;
+  text-decoration: none;
 }
 
-/* Institute Desktop Navigation */
+/* Desktop Navigation */
 .institute-nav-desktop {
   display: none;
 }
@@ -83,160 +75,113 @@
 .institute-nav-menu {
   display: flex;
   list-style: none;
-  gap: 2.5rem;
+  gap: 2rem;
   margin: 0;
   padding: 0;
 }
 
 .institute-nav-link {
-  text-decoration: none;
-  color: var(--bodycolor);
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 0.5rem 0;
-  position: relative;
-  transition: all 0.3s ease;
   font-family: var(--primaryfont);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--lightcolor);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  position: relative;
 }
 
 .institute-nav-link:hover {
-  color: var(--maincolor);
-  transform: translateY(-1px);
+  color: var(--backupcolor);
 }
 
-.institute-nav-link.institute-nav-active {
-  color: var(--maincolor);
-  font-weight: 600;
+.institute-nav-active {
+  color: var(--backupcolor);
 }
 
-.institute-nav-link.institute-nav-active::after {
+.institute-nav-active::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--maincolor);
-  border-radius: 2px;
-  background: linear-gradient(135deg, var(--maincolor), var(--backupcolor));
+  width: 100%;
+  height: 2px;
+  background: var(--backupcolor);
 }
 
-/* Institute Login Dropdown */
-.institute-login-section {
+/* Login Buttons */
+.institute-login-buttons {
   display: none;
-  position: relative;
+  gap: 0.75rem;
 }
 
-.institute-login-toggle {
+.institute-login-btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, var(--maincolor), var(--backupcolor));
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
   font-family: var(--primaryfont);
-  box-shadow: 0 4px 15px rgba(0, 104, 217, 0.3);
-}
-
-.institute-login-toggle:hover {
-  background: linear-gradient(135deg, var(--backupcolor), var(--maincolor));
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 104, 217, 0.4);
-}
-
-.institute-dropdown-arrow {
-  transition: transform 0.3s ease;
-}
-
-.institute-dropdown-arrow.institute-rotate {
-  transform: rotate(180deg);
-}
-
-.institute-dropdown-menu {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  margin-top: 0.75rem;
-  background: white;
-  border: 1px solid var(--graycolor);
-  border-radius: 12px;
-  padding: 0.75rem;
-  min-width: 200px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  animation: institute-dropdown-fade 0.2s ease;
-  z-index: 1001;
-}
-
-@keyframes institute-dropdown-fade {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.institute-dropdown-item {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.875rem 1rem;
-  text-decoration: none;
-  color: var(--bodycolor);
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  font-family: var(--primaryfont);
+  font-size: 0.875rem;
   font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
 }
 
-.institute-dropdown-item:hover {
-  background: var(--lightcolor);
-  color: var(--maincolor);
-  transform: translateX(4px);
+.institute-login-teacher {
+  background: var(--maincolor);
+  color: white;
 }
 
-/* Institute Mobile Menu Button */
+.institute-login-teacher:hover {
+  background: var(--backupcolor);
+  transform: translateY(-1px);
+}
+
+.institute-login-student {
+  background: var(--greencolor);
+  color: white;
+}
+
+.institute-login-student:hover {
+  background: #45a078;
+  transform: translateY(-1px);
+}
+
+/* Mobile Menu Button */
 .institute-mobile-menu-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   background: none;
   border: none;
-  color: var(--bodycolor);
+  color: white;
   cursor: pointer;
-  padding: 0.75rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .institute-mobile-menu-btn:hover {
-  background: var(--lightcolor);
-  color: var(--maincolor);
+  background: rgba(255, 255, 255, 0.1);
 }
 
-/* Institute Mobile Navigation */
+/* Mobile Navigation */
 .institute-nav-mobile {
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
-  background: white;
-  border-top: 1px solid var(--graycolor);
-  transform: translateY(-10px);
+  background: var(--navcolor);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(-100%);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.institute-nav-mobile.institute-mobile-open {
+.institute-mobile-open {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
@@ -245,104 +190,379 @@
 .institute-mobile-nav-menu {
   list-style: none;
   margin: 0;
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.institute-mobile-nav-link {
-  display: block;
-  padding: 1rem 1.25rem;
-  text-decoration: none;
-  color: var(--bodycolor);
-  font-weight: 500;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  font-family: var(--primaryfont);
-  font-size: 1.1rem;
+.institute-mobile-nav-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.institute-mobile-nav-link:hover,
-.institute-mobile-nav-link.institute-nav-active {
-  background: var(--lightcolor);
-  color: var(--maincolor);
-  transform: translateX(8px);
+.institute-mobile-nav-link {
+  display: block;
+  padding: 1rem 0.5rem;
+  font-family: var(--primaryfont);
+  font-size: 1rem;
+  color: var(--lightcolor);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.institute-mobile-nav-link:hover {
+  color: var(--backupcolor);
 }
 
 .institute-mobile-login-section {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--graycolor);
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .institute-mobile-login-item {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 1rem 1.25rem;
-  text-decoration: none;
-  color: var(--bodycolor);
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
   font-family: var(--primaryfont);
-  font-weight: 500;
-  background: var(--graycolor);
-}
-
-.institute-mobile-login-item:hover {
-  background: var(--maincolor);
+  font-size: 0.9rem;
   color: white;
-  transform: translateX(8px);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-/* Institute Responsive Design */
-@media (min-width: 1024px) {
+.institute-mobile-login-teacher {
+  background: var(--maincolor);
+}
+
+.institute-mobile-login-teacher:hover {
+  background: var(--backupcolor);
+}
+
+.institute-mobile-login-student {
+  background: var(--greencolor);
+}
+
+.institute-mobile-login-student:hover {
+  background: #45a078;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
   .institute-nav-desktop {
     display: block;
   }
-  
-  .institute-login-section {
-    display: block;
+
+  .institute-login-buttons {
+    display: flex;
   }
-  
+
   .institute-mobile-menu-btn {
     display: none;
   }
-  
+
   .institute-nav-mobile {
     display: none;
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1024px) {
   .institute-header-container {
+    padding: 0 2rem;
+  }
+}
+
+/* home hero section  */
+
+.institute-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.institute-hero-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.institute-hero-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Background Image with Overlay */
+.institute-hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.institute-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg,
+      rgba(19, 41, 61, 0.459) 0%,
+      rgba(0, 48, 92, 0.507) 50%,
+      rgba(0, 105, 217, 0.507) 100%);
+  z-index: 2;
+}
+
+/* Content Container */
+.institute-hero-container {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.institute-hero-content {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Text Content */
+.institute-hero-text {
+  color: white;
+}
+
+.institute-hero-title {
+  font-family: var(--primaryfont);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.institute-hero-subtitle {
+  font-family: var(--primaryfont);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--backupcolor);
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.institute-hero-description {
+  font-family: var(--primaryfont);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--lightcolor);
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+/* Features List */
+.institute-hero-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.institute-hero-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--primaryfont);
+  font-size: 1.1rem;
+  color: var(--lightcolor);
+}
+
+.institute-hero-feature-icon {
+  color: var(--backupcolor);
+  flex-shrink: 0;
+}
+
+/* Action Buttons */
+.institute-hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.institute-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-family: var(--primaryfont);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.institute-hero-btn-primary {
+  background: var(--maincolor);
+  color: white;
+}
+
+.institute-hero-btn-primary:hover {
+  background: var(--backupcolor);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 104, 217, 0.3);
+}
+
+.institute-hero-btn-secondary {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.institute-hero-btn-secondary:hover {
+  background: white;
+  color: var(--darkcolor);
+  transform: translateY(-2px);
+}
+
+
+/* Swiper Customization */
+.institute-hero-swiper .swiper-pagination {
+  bottom: 2rem !important;
+}
+
+.institute-hero-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+}
+
+.institute-hero-bullet.swiper-pagination-bullet-active {
+  background: var(--backupcolor);
+  transform: scale(1.2);
+}
+
+.institute-hero-swiper .swiper-button-next,
+.institute-hero-swiper .swiper-button-prev {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+
+.institute-hero-swiper .swiper-button-next svg,
+.institute-hero-swiper .swiper-button-prev svg {
+  height: 20px;
+  width: 20px;
+}
+
+
+.institute-hero-swiper .swiper-button-next:after,
+.institute-hero-swiper .swiper-button-prev:after {
+  font-size: 1.25rem;
+}
+
+.institute-hero-swiper .swiper-button-next:hover,
+.institute-hero-swiper .swiper-button-prev:hover {
+  background: var(--backupcolor);
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+
+  .institute-hero-stats {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .institute-hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .institute-hero {
+    height: 80vh;
+    min-height: 500px;
+  }
+
+  .institute-hero-content {
     padding: 0 1.5rem;
   }
-  
-  .institute-logo-text {
+
+  .institute-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .institute-hero-subtitle {
     font-size: 1.25rem;
   }
-  
-  .institute-logo-image {
-    height: 35px;
+
+  .institute-hero-description {
+    font-size: 1.1rem;
+  }
+
+  .institute-hero-actions {
+    justify-content: center;
+  }
+
+  .institute-hero-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .institute-hero-title {
+    font-size: 2rem;
+  }
+
+  .institute-hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .institute-hero-description {
+    font-size: 1rem;
+  }
+
+  .institute-hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .institute-hero-btn {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
   }
 }
 
-/* Smooth scrolling and box-sizing */
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--primaryfont);
-  color: var(--bodycolor);
-  line-height: 1.6;
-}

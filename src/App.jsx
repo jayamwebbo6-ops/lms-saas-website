@@ -6,7 +6,7 @@ const App = () => {
   return (
     <BrowserRouter basename="/lms-saas/">
       <Routes>
-          <Route path="/*" element={<AdminRouter />} />
+       
           <Route path="/admin/*" element={<AdminRouter />} />
           <Route path="/institute/*" element={<InstituteRouter />} />
       </Routes>
